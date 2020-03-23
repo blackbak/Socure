@@ -20,7 +20,7 @@ def main():
     response = requests.post("http://localhost:1234/invocations", headers=headers, data= http_data)
     predictions = np.array(response.json())
     voted_labels = vote(predictions)
-    print("The predictions of the anomaly ensemble model through voting is:")
+    print("The predictions of the anomaly ensemble model through voting is:th")
     print(voted_labels)
 
 
